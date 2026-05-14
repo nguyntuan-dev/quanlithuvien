@@ -1,0 +1,47 @@
+{
+  "http://127.0.0.1:8000/api/thong-ke/tong-quan": {
+    "status": 200,
+    "body": {
+      "tong_tai_lieu": 8,
+      "doc_gia_hoat_dong": 3,
+      "dang_duoc_muon": 5,
+      "vi_pham_chua_xu_ly": 0,
+      "tong_tien_phat_chua_thu": 0.0,
+      "dat_truoc_cho_duyet": 0
+    }
+  },
+  "http://127.0.0.1:8000/api/thong-ke/muon-theo-thang": {
+    "status": 200,
+    "body": [
+      {
+        "thang": "05/2026",
+        "so_luong": 5
+      }
+    ]
+  },
+  "http://127.0.0.1:8000/api/thong-ke/top-tai-lieu": {
+    "status": 200,
+    "body": [
+      {
+        "ten": "Xác suất thống kê",
+        "luot_muon": 1
+      },
+      {
+        "ten": "Truyện Kiều",
+        "luot_muon": 1
+      },
+      {
+        "ten": "Lập trình Python cơ bản",
+        "luot_muon": 1
+      },
+      {
+        "ten": "Giải tích 1",
+        "luot_muon": 1
+      },
+      {
+        "ten": "Kinh tế vi mô",
+        "luot_muon": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { @apply bg-surface-soft text-ink font-sans antialiased; }
+  input, select, textarea {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface rounded-xl border border-border shadow-card;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-150 cursor-pointer border;
+  }
+  .btn-primary {
+    @apply bg-primary text-white border-primary hover:bg-primary-hover;
+  }
+  .btn-secondary {
+    @apply bg-surface text-ink border-border hover:bg-surface-muted;
+  }
+  .btn-danger {
+    @apply bg-danger text-white border-danger hover:opacity-90;
+  }
+  .btn-ghost {
+    @apply bg-transparent text-ink-muted border-transparent hover:bg-surface-muted;
+  }
+  .input {
+    @apply w-full px-3 py-2 text-sm border border-border rounded-lg bg-surface
+           focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all;
+  }
+  .label {
+    @apply block text-xs font-medium text-ink-muted mb-1;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .badge-green  { @apply bg-success-light text-success; }
+  .badge-red    { @apply bg-danger-light text-danger; }
+  .badge-yellow { @apply bg-warning-light text-warning; }
+  .badge-blue   { @apply bg-primary-light text-primary; }
+  .badge-gray   { @apply bg-surface-muted text-ink-muted; }
+
+  .table-row {
+    @apply border-b border-border last:border-0 hover:bg-surface-soft transition-colors;
+  }
+  .th { @apply text-xs font-semibold text-ink-muted uppercase tracking-wide px-4 py-3 text-left; }
+  .td { @apply px-4 py-3 text-sm text-ink; }
+
+  .sidebar-link {
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium
+           text-ink-muted hover:bg-surface-muted hover:text-ink transition-all cursor-pointer;
+  }
+  .sidebar-link.active {
+    @apply bg-primary-light text-primary;
+  }
+  .page-title {
+    @apply text-xl font-semibold text-ink;
+  }
+  .section-title {
+    @apply text-sm font-semibold text-ink mb-4;
+  }
+}
